@@ -10,13 +10,11 @@ A real-time vehicle detection and tracking system using YOLOv8 and ByteTrack, im
 - Saves the processed video with bounding boxes, labels, and tracking traces  
 - Counts vehicles crossing the tracking line  
 
-
+## Requirements
 - Make sure you have Python 3.8 or newer installed.
-
-
 - pip install ultralytics==8.3.19 supervision[assets]==0.24.0 numpy opencv-python
 
-
+## Customizable
 - Changing Tracked Vehicle Types
 Modify the `SELECTED_CLASS_NAMES` list in the script:
 
@@ -29,7 +27,7 @@ SELECTED_CLASS_NAMES.append('bicycle')
 - Adjusting the Tracking Line Position
 LINE_Y = int(height * 5/8)  # Adjust the fraction to change height
 
-
+## Output
 The script will generate a processed video where:
 - Vehicles are detected and tracked.
 - A line counts the number of passing vehicles.
