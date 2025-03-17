@@ -15,7 +15,7 @@ A real-time vehicle detection and tracking system using YOLOv8 and ByteTrack, im
 - pip install ultralytics==8.3.19 supervision[assets]==0.24.0 numpy opencv-python
 
 ## Customizable
-- Changing Tracked Vehicle Types
+Changing Tracked Vehicle Types
 Modify the `SELECTED_CLASS_NAMES` list in the script:
 
 SELECTED_CLASS_NAMES = ['car', 'motorcycle', 'bus', 'truck']
@@ -24,7 +24,7 @@ To track bicycles as well, add:
 SELECTED_CLASS_NAMES.append('bicycle')
 
 
-- Adjusting the Tracking Line Position
+Adjusting the Tracking Line Position
 LINE_Y = int(height * 5/8)  # Adjust the fraction to change height
 
 ## Output
